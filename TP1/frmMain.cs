@@ -25,13 +25,19 @@ namespace TP1 {
 				if (txtPass.Text == correctPassword)
 					if (cmbSpecialty.Text == correctCarrera) {
 						frmRedes redes = new frmRedes();
-						redes.Show();
+						Hide();
+						if (redes.ShowDialog() == DialogResult.Cancel)
+							Close();
 					} else
 						lblWarning.Text = "Carrera incorrecta";
 				else
 					lblWarning.Text = "Contraseña incorrecta";
 			else
 				lblWarning.Text = "Username incorrecto";
+		}
+
+		private void btnCancel_Click(object sender, EventArgs e) {
+			Close();
 		}
 	}
 }

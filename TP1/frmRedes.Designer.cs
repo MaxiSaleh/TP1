@@ -165,6 +165,7 @@
 			this.Controls.Add(this.btnIG);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnFB);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmRedes";
 			this.Text = "Nuestras Redes";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
